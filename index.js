@@ -1,3 +1,4 @@
+const nyeFacts = require('./nye-fact-module');
 const express = require('express');
 const cors = require('cors');
 const { PORT, IP } = require('./src/config');

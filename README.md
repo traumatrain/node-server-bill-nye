@@ -1,4 +1,5 @@
 # Product Name
+
 > Let's learn about creating a simple REST API using node!
 
 This is a very basic API server that is intended to be consumed locally. Intially, it will only support GET requests, but we could also add POST or other fun stuff.
@@ -8,14 +9,14 @@ This is a very basic API server that is intended to be consumed locally. Intiall
 1. Clone the repo to your machine with GitHub Desktop
 2. In the CLI, `cd` to the cloned folder
 3. Run `npm i` to install the required dependencies
-3. Run `npm start` to start the server in watch (live reload) mode
+4. Run `npm start` to start the server in watch (live reload) mode
 
 ## To-do
 
 The following tasks can be completed in pretty much any way you'd like.
 
 - [ ] Create the GET route
-- [ ] Create a module/file to contain facts about Bill Nye
+- [x] Create a module/file to contain facts about Bill Nye
 - [ ] Create a module/file to parse a random fact
 - [ ] Send a response containing a fact when the GET route is queried
 
