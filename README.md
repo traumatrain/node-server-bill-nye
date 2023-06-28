@@ -29,7 +29,7 @@ For folder structure, I would generally expect to see something like the followi
 │   ├── api-routes
 │   ├── config
 │   ├── data
-│   ├── utils
+│   └── utils
 ├── .env
 ├── .eslintrc.json
 ├── .gitignore
