@@ -1,5 +1,6 @@
-# Product Name
+# Bill Nye API
 > Let's learn about creating a simple REST API using node!
+> Bonus that "Bill Nye API" has a nice ring to it 😄
 
 This is a very basic API server that is intended to be consumed locally. Intially, it will only support GET requests, but we could also add POST or other fun stuff.
 
