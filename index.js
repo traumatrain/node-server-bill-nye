@@ -2,9 +2,11 @@ const express = require('express');
 const cors = require('cors');
 const { PORT, IP } = require('./src/config');
 
+const app = express();
+
 const nyeFacts = require('./nye-fact-module');
 
-const app = express();
+const randomize = require('./parse-facts');
 
 app.use(express.json());
 app.use(cors());
