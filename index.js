@@ -6,7 +6,12 @@ const app = express();
 
 const nyeFacts = require('./nye-fact-module');
 
-const randomize = require('./parse-facts');
+const randomFacts = require('./parse-facts');
+
+// GET route?
+nyeFacts.get('/fact', (req, res) => {
+  res.send(randomFacts);
+});
 
 app.use(express.json());
 app.use(cors());
