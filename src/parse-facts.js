@@ -1,4 +1,4 @@
-const nyeFacts = require('./nye-fact-module');
+const nyeFacts = require('../nye-fact-module');
 
 // this is where facts will be parsed
 module.exports = {
