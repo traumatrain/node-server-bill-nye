@@ -4,12 +4,12 @@ const { PORT, IP } = require('./src/config');
 
 const app = express();
 
-const nyeFacts = require('./nye-fact-module');
+const { nyeFacts } = require('./nye-fact-module');
 
-const randomFacts = require('./parse-facts');
+const { randomFacts } = require('./parse-facts');
 
 // GET route?
-nyeFacts.get('/fact', (req, res) => {
+app.get('/fact', (req, res) => {
   res.send(randomFacts);
 });
 
