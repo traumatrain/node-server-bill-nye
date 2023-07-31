@@ -11,5 +11,5 @@ const nyeFacts = [
   'From 2000-2002, he was the technical expert of “BattleBots”, and in 2004-2005, he hosted the award winning series for The Science Channel called “100 Greatest Discoveries”',
 ];
 
-// way of exporting
+// exports array to index
 module.exports = nyeFacts;
