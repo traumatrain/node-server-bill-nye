@@ -1,6 +1,6 @@
-const nyeFacts = require('./nye-fact-module');
+function randomBillFact(nyeFacts) {
+  const randomNum = Math.floor(Math.random() * nyeFacts.length);
+  return nyeFacts[randomNum];
+}
 
-// this is where facts will be parsed
-module.exports = {
-  // is this where I should put an array?
-};
+module.exports = randomBillFact;

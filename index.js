@@ -2,15 +2,21 @@ const express = require('express');
 const cors = require('cors');
 const { PORT, IP } = require('./src/config');
 const nyeFacts = require('./src/nye-fact-module');
-const randomFacts = require('./src/parse-facts');
+const randomBillFact = require('./src/parse-facts');
 
 const app = express();
 
-// GET route?
+// GET route random
 app.get('/fact', (req, res) => {
-  res.json({
+  res.send({
+    randomFact: randomBillFact(nyeFacts),
+  });
+});
+
+// GET route all
+app.get('/allfacts', (req, res) => {
+  res.send({
     nyeFacts,
-    randomFacts: nyeFacts[0],
   });
 });
 
