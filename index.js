@@ -6,6 +6,9 @@ const randomBillFact = require('./src/parse-facts');
 
 const app = express();
 
+app.use(express.json());
+app.use(cors());
+
 // GET route random
 app.get('/fact', (req, res) => {
   res.send({
@@ -19,9 +22,6 @@ app.get('/allfacts', (req, res) => {
     nyeFacts,
   });
 });
-
-app.use(express.json());
-app.use(cors());
 
 app.listen(PORT, IP, () =>
   console.log(`API server is running at http://localhost:${PORT}...`)
